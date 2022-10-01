@@ -1,0 +1,174 @@
+body {
+  font-family: "Arial";
+  background-color: black;
+  color: white;
+  margin: 0px;
+}
+
+.wd-wrapper {
+  max-width: 600px;
+  border-left: solid 1px lightgray;
+  border-right: solid 1px lightgray;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wd-title-bookmark {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid 1px lightgray;
+}
+
+.wd-title-bookmark #wd-title-bookmark-left h1 {
+  padding: 12px 0 0 16px;
+  margin: 0px;
+  font-size: 20px;
+}
+
+.wd-title-bookmark #wd-title-bookmark-left h3 {
+  padding: 0px 0 12px 16px;
+  font-size: 13px;
+  margin: 0px;
+  color: lightgray;
+}
+
+.wd-title-bookmark #wd-title-bookmark-right {
+  padding-right: 16px;
+  font-weight: bold;
+  color: lightskyblue;
+}
+
+.wd-bookmark-main {
+  display: flex;
+  border-bottom: solid 1px lightgray;
+}
+
+.wd-bookmark-profile-img-left {
+  padding: 12px 0 0 16px;
+}
+.wd-bookmark-profile-img-left img {
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+}
+
+.wd-bookmark-main-right {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.wd-bookmark-author {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin: 0px;
+  padding: 0px;
+}
+
+.wd-bookmark-author #wd-bookmark-author-left {
+  display: flex;
+  align-items: center;
+  padding: 12px 0 0 12px;
+  margin: 0px;
+}
+
+.wd-bookmark-author #wd-bookmark-author-left h1 {
+  margin: 0px;
+  padding: 0px;
+  font-size: 15px;
+}
+
+.wd-bookmark-author #wd-bookmark-author-left h3 {
+  margin: 0px;
+  padding: 0px;
+  font-size: 15px;
+  color: darkgray;
+}
+
+.wd-bookmark-author #wd-bookmark-author-right {
+  padding-right: 12px;
+  color: darkgray;
+}
+
+.wd-bookmark-right-desc {
+  color: white;
+  font-size: 15px;
+  max-width: 506px;
+  height: auto;
+  font-weight: lighter;
+}
+
+.wd-bookmark-right-desc h3 {
+  color: white;
+  font-size: 15px;
+  max-width: 506px;
+  padding: 0 16px 12px 12px;
+  margin: 0px;
+}
+
+.wd-bookmark-img-title-desc {
+  display: flex;
+  flex-direction: column;
+  border: solid 1px lightgray;
+
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
+  border-bottom-left-radius: 5%;
+  border-bottom-right-radius: 5%;
+  margin-left: 11px;
+  padding: 0px;
+  max-width: 504px;
+}
+
+.wd-bookmark-img-title-desc img {
+  height: 264px;
+  width: 504px;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
+  margin: 0px;
+}
+
+#wd-bookmark-img {
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+}
+.wd-bookmark-img-title-desc #wd-bookmark-img-desc {
+  max-width: 504px;
+  padding-left: 11px;
+}
+
+.wd-bookmark-img-title-desc #wd-bookmark-img-desc h1 {
+  margin: 0px;
+  padding: 12px 0 0 0;
+  font-size: 15px;
+  max-width: 490px;
+}
+
+.wd-bookmark-img-title-desc #wd-bookmark-img-desc h3 {
+  color: lightgray;
+  font-size: 15px;
+  max-width: 490px;
+  overflow: hidden;
+  white-space: wrap;
+}
+
+#wd-bookmark-img-desc {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 0 11px;
+  border-bottom-left-radius: 15%;
+  border-bottom-right-radius: 15%;
+}
+
+.wd-bookmark-symbols {
+  font-family: "Arial";
+  font-weight: bold;
+  display: flex;
+  justify-content: space-around;
+  padding: 12px 16px 12px 12px;
+  margin: 0px;
+  align-items: center;
+}
