@@ -6,8 +6,8 @@ body {
 }
 
 .wrapper {
-  border-right: solid 1px darkgray;
-  border-left: solid 1px darkgray;
+  border-right: solid 1px rgb(47, 51, 54);
+  border-left: solid 1px rgb(47, 51, 54);
 }
 
 .wd-search-bar {
@@ -84,7 +84,7 @@ body {
 }
 
 .wd-main-content-section {
-  border-top: solid 15px darkgray;
+  border-top: solid 15px rgb(47, 51, 54);
   margin: 0px;
   padding: 0px;
 }
@@ -93,7 +93,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  padding: 10px;
+  padding: 16px;
   margin: 0px;
   /*border-bottom: solid rgb(110,118,125);*/
 }
@@ -117,20 +117,20 @@ body {
 .wd-suggested-author-image {
   display: flex;
   justify-content: space-between;
-  border-top: solid rgb(110, 118, 125);
-  border-bottom: solid rgb(110, 118, 125);
+  border-top: solid rgb(47, 51, 54);
+  border-bottom: solid rgb(47, 51, 54);
 }
 
 .wd-suggested-author-image > .wd-left-col > h3 {
-  padding: 10px 0 2px 15px;
+  padding: 16px 0 2px 16px;
   margin: 0px;
-  font-size:13px;
+  font-size: 13px;
 }
 
 .wd-suggested-author-image > .wd-left-col > h1 {
-  padding: 0px 0 2px 15px;
+  padding: 0px 0 2px 16px;
   margin: 0px;
-  font-size:25px;
+  font-size: 25px;
 }
 
 .wd-suggested-author-image > .wd-right-col > img {
@@ -141,31 +141,52 @@ body {
 }
 
 .wd-suggested-title-image {
-    display: flex;
-    justify-content: space-between;
-    border-top: solid rgb(110, 118, 125);
-    border-bottom: solid rgb(110, 118, 125);
-  }
-  
-  .wd-suggested-title-image > .wd-left-col > h3 {
-    padding: 10px 0 2px 15px;
-    margin: 0px;
-    font-size:13px;
-    color:rgb(110, 118, 125);
-  }
-  
-  .wd-suggested-title-image > .wd-left-col > h1 {
-    padding: 0px 0 2px 15px;
-    margin: 0px;
-    font-size:25px;
-  }
-  
-  .wd-suggested-title-image > .wd-right-col > img {
-    padding: 16px;
-    height: 100px;
-    width: 100px;
-    border-radius: 25%;
-  }
+  display: flex;
+  justify-content: space-between;
+  border-top: solid rgb(47, 51, 54);
+  border-bottom: solid rgb(47, 51, 54);
+}
+
+.wd-suggested-title-image > .wd-left-col > h3 {
+  padding: 16px 0 2px 16px;
+  margin: 0px;
+  font-size: 13px;
+  color: rgb(110, 118, 125);
+}
+
+.wd-suggested-title-image > .wd-left-col > h1 {
+  padding: 0px 0 2px 16px;
+  margin: 0px;
+  font-size: 25px;
+}
+
+.wd-suggested-title-image > .wd-right-col > img {
+  padding: 16px;
+  height: 100px;
+  width: 100px;
+  border-radius: 25%;
+}
 
 .wd-extra-small {
 }
+
+.wd-sidebar-left {
+  height: 100%; 
+  width: 50px; /* Set the width of the sidebar */
+  position: fixed; 
+  z-index: 1; 
+  top: 0;
+  left: 0;
+  background-color: black; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+  border-right: solid 1px rgb(47, 51, 54);
+}
+
+.wd-wrapper {
+  margin-left: 50px; /* Same as the width of the sidebar */
+  padding: 0px 0px;
+  margin-right: 20px;
+  border-right: solid 1px rgb(47, 51, 54);
+}
+
