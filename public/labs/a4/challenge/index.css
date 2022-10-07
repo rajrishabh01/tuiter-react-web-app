@@ -1,0 +1,23 @@
+.wd-wrapper{
+    background-color: black;
+}
+
+.wd-mid-section{
+    border-right:1px solid lightgray;
+    border-left:1px solid lightgray;
+}
+
+.wd-active-tab{
+    border-bottom:3px solid rgb(12,159,233);
+    color: white;
+    padding-bottom: 0px;
+}
+
+.wd-pill{
+    border:0;
+    color: white;
+}
+
+::placeholder{
+    color: lightgray;
+}
