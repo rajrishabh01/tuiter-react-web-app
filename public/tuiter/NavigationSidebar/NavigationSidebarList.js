@@ -1,18 +1,16 @@
 import SideTabsItem from "./SideTabsItem.js";
 import sidetabs from "./sidetabs.js";
 
-const NavigationSidebarList = () => {
+const NavigationSidebarList = (active) => {
   return `
-    <ul class="list-group">
-    <li class="list-group-item bg-black text-white">
-    <div class="row">
-        <div class="col-2"><i class="fas fa-tenge"></i></div>
-        <div class="col-10"></div>
-    </div>
-</li>
+    <ul class="list-group mx-2">
+    <a href="#" class="list-group-item list-group-item-action">
+        <i class="fas fa-tenge"></i>
+     </a>
+    
     ${sidetabs
-      .map(sides => {
-        return SideTabsItem(sides);
+      .map((sides) => {
+        return SideTabsItem(sides, active);
       })
       .join("")}
     </ul>
