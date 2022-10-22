@@ -9,11 +9,11 @@ const PostItem = ({ posts }) => {
                 <div className="col-1 me-3">
                     <img src={`/images/${posts.profile}`}
                         width="50px" height="50px"
-                        className="rounded-circle" />
+                        className="rounded-circle" alt="text"/>
                 </div>
                 <div className="col me-2">
                     <div className="wd-posts-header">
-                        <a href="#"
+                        <a href="#top"
                             className="list-group-item-action
                        fw-bold
                        text-decoration-none">
@@ -32,7 +32,7 @@ const PostItem = ({ posts }) => {
                             <img className="card-img-top
                         {posts.imageDescription ?
                         'rounded-top-4' : 'rounded-4'}"
-                                src={`/images/${posts.image}`} alt="Post image" />
+                                src={`/images/${posts.image}`} alt="Post" />
                             <div className="card-body
                         {posts.image_title && posts.image_description ? 
                           '' : 'd-none'}">
@@ -49,25 +49,25 @@ const PostItem = ({ posts }) => {
                     </div>
                     <div className="row mt-3">
                         <div className="col me-1">
-                            <a className="text-decoration-none text-secondary" href="#">
+                            <a className="text-decoration-none text-secondary" href="#top">
                                 <i className="fa-regular fa-comment me-2"></i>
                                 <span>{posts.comment}</span>
                             </a>
                         </div>
                         <div className="col me-1">
-                            <a className="text-decoration-none text-secondary" href="#">
+                            <a className="text-decoration-none text-secondary" href="#top">
                                 <i className="fa-solid fa-retweet me-2"></i>
                                 <span>{posts.tweets}</span>
                             </a>
                         </div>
                         <div className="col me-1">
-                            <a className="text-decoration-none text-secondary" href="#">
+                            <a className="text-decoration-none text-secondary" href="#top">
                                 <i className="fa-regular fa-heart me-2"></i>
                                 <span>{posts.heart}</span>
                             </a>
                         </div>
                         <div className="col me-1">
-                            <a className="text-decoration-none text-secondary ps-2" href="#">
+                            <a className="text-decoration-none text-secondary ps-2" href="#top">
                                 <i className="fa-solid fa-arrow-up-from-bracket"></i>
                             </a>
                         </div>
