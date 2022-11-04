@@ -1,0 +1,30 @@
+[{ "_id": 123, "topic": "Leather", "userName": "Zapeti",
+    "title": "Tesla Cybertruck lands on Mars and picks up the Curiosity rover on its 6' bed",
+    "time": "2h",   "image": "zapeti.jpeg","liked": true,
+    "replies": 233,
+    "retuits": 42,
+    "likes": 275,
+    "handle": "@zaps",
+    "tuit": "Leather is a strong, flexible and durable material obtained from the tanning, or chemical treatment, of animal skins and hides to prevent decay. The most common leathers come from cattle, sheep, goats, equine animals, buffalo, pigs and hogs, and aquatic animals such as seals and alligators."
+  },
+  { "_id": 234, "topic": "Space",   "userName": "Aladdin",
+    "title": "100s of SpaceX Starships land on Mars after a 6 month journey. 1000s of Martian colonists being building Mars Base 1",
+    "time": "4h",   "image": "../../images/aladdin.png","liked": true,
+    "replies": 928,
+    "retuits": 4732,
+    "likes": 905,
+    "handle": "@genie",
+    "tuit": "You want to wake up in the morning and think the future is going to be great - and that’s what being a spacefaring civilization is all about. It’s about believing in the future and thinking that the future will be better than the past. And I can’t think of anything more exciting than going out there and being among the stars"
+  },
+  { "_id": 345, "topic": "clothes",  "userName": "UnderArmour",
+    "title": "Tesla FSD finally makes driving obsolete. After years of delay, Tesla Full Self Driving can drive you to work while you work, play, or sleep",
+    "time": "4d",   "image": "underarmour.jpeg","liked": true,
+    "replies": 763,
+    "retuits": 232,
+    "likes": 2995,
+    "handle": "@wears",
+    "tuit": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English"
+  }
+ ]
+ 
+ 

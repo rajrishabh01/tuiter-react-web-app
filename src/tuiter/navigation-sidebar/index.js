@@ -10,38 +10,47 @@ const NavigationSidebar = () => {
  return (
    <div className="list-group">
      <a href="#top" className="list-group-item">Tuiter</a>
-     <Link to="/tuiter/home" className={`list-group-item ${active === 'home'?'active':''}`}>
-       Home
+     <Link to="/tuiter/" className={`list-group-item ${active === ''?'active':''}`}>
+     <i class="col-1 fa fa-home align-self-center"></i>
+     <span className="ms-2">&nbsp;Home</span>
      </Link>
      <Link to="/tuiter/explore" className={`list-group-item ${active === 'explore'?'active':''}`}>
-       Explore
+     <i class="col-1 fa fa-hashtag align-self-center"></i>
+     <span className="ms-2">&nbsp;Explore</span>
      </Link>
      <Link to="/" className="list-group-item">
-       Labs
+     <i class="col-1 fa fa-home align-self-center"></i>
+     <span className="ms-2">&nbsp;Labs</span>
      </Link>
      <a href="#top" className={`list-group-item
                     ${active === 'notifications'?'active':''}`}>
-       Notifications
+       <i class="col-1 fa fa-bell align-self-center"></i>
+     <span className="ms-2">&nbsp;Notifications</span>
      </a>
      <a href="#top" className={`list-group-item
                     ${active === 'messages'?'active':''}`}>
-       Messages
+       <i class="col-1 fas fa-comments align-self-center"></i>
+     <span className="ms-2">&nbsp;Messages</span>
      </a>
      <a href="#top" className={`list-group-item
                     ${active === 'bookmarks'?'active':''}`}>
-       Bookmarks
+       <i class="col-1 fa fa-hashtag align-self-center"></i>
+     <span className="ms-2">&nbsp;Bookmarks</span>
      </a>
      <a href="#top" className={`list-group-item
                     ${active === 'lists'?'active':''}`}>
-       Lists
+       <i class="col-1 fa fa-users align-self-center"></i>
+     <span className="ms-2">&nbsp;Lists</span>
      </a>
      <a href="#top" className={`list-group-item
                     ${active === 'profile'?'active':''}`}>
-       Profile
+       <i class="col-1 fa fa-share align-self-center"></i>
+     <span className="ms-2">&nbsp;Profile</span>
      </a>
      <a href="#top" className={`list-group-item
                     ${active === 'more'?'active':''}`}>
-       More
+       <i class="col-1 fa fa-hashtag align-self-center"></i>
+     <span className="ms-2">&nbsp;More</span>
      </a>
    </div>
  );

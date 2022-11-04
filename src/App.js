@@ -2,19 +2,22 @@ import Labs from "./labs";
 import HelloWorld from "./labs/a6/hello-world";
 import Tuiter from "./tuiter";
 import { BrowserRouter } from "react-router-dom";
-import {Routes, Route} from "react-router";
+import { Routes, Route } from "react-router";
 
 function App() {
   return (
     <BrowserRouter>
       <div className="container">
-      <Routes>
+        <Routes>
           <Route index
-                 element={<Labs/>}/>
+            element={<Labs />} />
           <Route path="/hello"
-                 element={<HelloWorld/>}/>
+            element={<HelloWorld />} />
           <Route path="/tuiter/*"
-                 element={<Tuiter/>}/>
+            element={<Tuiter />} />
+            <Route path="/tuiter"
+            element={<Tuiter />} />
+          <Route path="/*" element={<Labs />} />
         </Routes>
 
       </div>
