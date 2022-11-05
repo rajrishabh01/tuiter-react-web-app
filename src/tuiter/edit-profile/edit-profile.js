@@ -13,7 +13,7 @@ const EditProfileItem = () => {
     const [bio, setBio] = useState(profile.bio);
     const [location, setLocation] = useState(profile.location);
     const [website, setWebsite] = useState(profile.website);
-    const [dateOfBirth, setDateOfBirth] = useState(profile.dateOfBirth);
+    const [dateOfBirth] = useState(profile.dateOfBirth);
 
     let navigate = useNavigate();
     const routeChange = () => {
@@ -76,15 +76,15 @@ const EditProfileItem = () => {
         setProfile(newProfile);
     }
 
-    const handleDOBChange = (event) => {
-        const newDOB = event.target.value;
-        setDateOfBirth(newDOB);
-        const newProfile = {
-            ...profile,
-            dateOfBirth: dateOfBirth
-        }
-        setProfile(newProfile);
-    }
+    // const handleDOBChange = (event) => {
+    //     const newDOB = event.target.value;
+    //     setDateOfBirth(newDOB);
+    //     const newProfile = {
+    //         ...profile,
+    //         dateOfBirth: dateOfBirth
+    //     }
+    //     setProfile(newProfile);
+    // }
 
     return (
         <>

@@ -10,7 +10,6 @@ const TuitItem = ({ tuits }) => {
         dispatch(deleteTuit(id));
     }
 
-    const liked = tuits.liked ? `style={{color:'red'}}` : '';
     return (
         <li className="list-group-item pt-3 wd-post-list-item">
             <div className="row">
