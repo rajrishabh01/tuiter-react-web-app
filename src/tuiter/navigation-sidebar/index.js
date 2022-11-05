@@ -42,11 +42,11 @@ const NavigationSidebar = () => {
        <i class="col-1 fa fa-users align-self-center"></i>
      <span className="ms-2">&nbsp;Lists</span>
      </a>
-     <a href="#top" className={`list-group-item
+     <Link to="/tuiter/profile" className={`list-group-item
                     ${active === 'profile'?'active':''}`}>
        <i class="col-1 fa fa-share align-self-center"></i>
      <span className="ms-2">&nbsp;Profile</span>
-     </a>
+    </Link>
      <a href="#top" className={`list-group-item
                     ${active === 'more'?'active':''}`}>
        <i class="col-1 fa fa-hashtag align-self-center"></i>

@@ -1,16 +1,22 @@
 import React, { useState } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';  
+import { useDispatch } from "react-redux";
+import { createTuit } from "../reducers/tuits-reducer";
 
 const WhatsHappening = () => {
 let[whatsHappening, setWhatsHappening] = useState('');
+const dispatch = useDispatch();
 
 const tuitClickHandler = () => {
-    console.log(whatsHappening);
+    const newTuit = {
+        tuit: whatsHappening
+    }
+    dispatch(createTuit(newTuit));
 }
     return(
         <div className="row">
      <div className="col-auto">
-       <img src="../images/aladdin.png" width={60}/>
+       <img src="../images/aladdin.png" width={60} alt="profile"/>
      </div>
      <div className="col-10">
        <textarea value={whatsHappening} placeholder="What's happening?"
