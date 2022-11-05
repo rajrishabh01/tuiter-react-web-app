@@ -1,6 +1,6 @@
 [{ "_id": 123, "topic": "Leather", "userName": "Zapeti",
     "title": "Tesla Cybertruck lands on Mars and picks up the Curiosity rover on its 6' bed",
-    "time": "2h",   "image": "zapeti.jpeg","liked": true,
+    "time": "2h",   "image": "zapeti.jpeg","liked": false,
     "replies": 233,
     "retuits": 42,
     "likes": 275,
