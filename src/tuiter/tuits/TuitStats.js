@@ -6,6 +6,8 @@ import { faComment, faArrowUpFromBracket, faRetweet } from '@fortawesome/free-so
 import { useDispatch } from "react-redux";
 import { updateTuitThunk } from "../../services/tuits-thunks";
 import { faThumbsDown } from '@fortawesome/free-regular-svg-icons'
+import '@fortawesome/fontawesome-free/css/all.css';
+
 
 const TuitStats = ({ tuits }) => {
     const dispatch = useDispatch();
@@ -15,11 +17,11 @@ const TuitStats = ({ tuits }) => {
                 <FontAwesomeIcon icon={faComment} className="pe-2 text-decoration-none text-secondary fa-1x" />
                 {tuits.replies}
             </div>
-            <div className="col-3 align-content-center text-secondary">
+            <div className="col-2 align-content-center text-secondary">
                 <FontAwesomeIcon icon={faRetweet} className="pe-2 text-decoration-none text-secondary fa-1x" />
                 {tuits.retuits}
             </div>
-            <div className="col-3 text-decoration-none text-secondary">
+            <div className="col-2 text-decoration-none text-secondary">
                 {tuits.liked && <FontAwesomeIcon icon={faSolidHeart} className="pe-2 text-danger fa-1x"
                     onClick={() => dispatch(updateTuitThunk({
                         ...tuits,
@@ -34,7 +36,7 @@ const TuitStats = ({ tuits }) => {
                     }))} />}
                 {tuits.likes}
             </div>
-            <div className="col-3 text-decoration-none text-secondary">
+            <div className="col-2 text-decoration-none text-secondary">
                 {tuits.disliked && <FontAwesomeIcon icon={faThumbsDown} className="pe-2 text-danger fa-1x"
                     onClick={() => dispatch(updateTuitThunk({
                         ...tuits,
@@ -49,7 +51,7 @@ const TuitStats = ({ tuits }) => {
                     }))} />}
                 {tuits.dislikes}
             </div>
-            <div className="col-3 text-decoration-none">
+            <div className="col-2 text-decoration-none">
                 <FontAwesomeIcon icon={faArrowUpFromBracket} />
             </div>
         </div>
