@@ -5,6 +5,7 @@ import { faHeart as faOutlinedHeart } from '@fortawesome/free-regular-svg-icons'
 import { faComment, faArrowUpFromBracket, faRetweet } from '@fortawesome/free-solid-svg-icons'
 import { useDispatch } from "react-redux";
 import { updateTuitThunk } from "../../services/tuits-thunks";
+import { faThumbsDown } from '@fortawesome/free-regular-svg-icons'
 
 const TuitStats = ({ tuits }) => {
     const dispatch = useDispatch();
@@ -32,6 +33,21 @@ const TuitStats = ({ tuits }) => {
                         likes: tuits.likes + 1
                     }))} />}
                 {tuits.likes}
+            </div>
+            <div className="col-3 text-decoration-none text-secondary">
+                {tuits.disliked && <FontAwesomeIcon icon={faThumbsDown} className="pe-2 text-danger fa-1x"
+                    onClick={() => dispatch(updateTuitThunk({
+                        ...tuits,
+                        disliked: false,
+                        dislikes: tuits.dislikes - 1
+                    }))} />}
+                {!tuits.disliked && <FontAwesomeIcon icon={faThumbsDown} className="pe-2 text-secondary fa-1x"
+                    onClick={() => dispatch(updateTuitThunk({
+                        ...tuits,
+                        disliked: true,
+                        dislikes: tuits.dislikes + 1
+                    }))} />}
+                {tuits.dislikes}
             </div>
             <div className="col-3 text-decoration-none">
                 <FontAwesomeIcon icon={faArrowUpFromBracket} />
