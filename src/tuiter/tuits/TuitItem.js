@@ -2,13 +2,13 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import '@fortawesome/fontawesome-free/css/all.min.css'
 import { useDispatch } from "react-redux";
-import { deleteTuit } from "../reducers/tuits-reducer";
 import TuitStats from "./TuitStats";
+import { deleteTuitThunk } from "../../services/tuits-thunks";
 
 const TuitItem = ({ tuits }) => {
     const dispatch = useDispatch();
     const deleteTuitHandler = (id) => {
-        dispatch(deleteTuit(id));
+        dispatch(deleteTuitThunk(id));
     }
 
     return (
